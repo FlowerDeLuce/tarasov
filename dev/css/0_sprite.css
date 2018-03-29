@@ -1,0 +1,96 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow2 {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -30px;
+  width: 23px;
+  height: 27px;
+}
+.icon-cap {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -77px;
+  width: 50px;
+  height: 32px;
+}
+.icon-chat {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -503px;
+  width: 60px;
+  height: 59px;
+}
+.icon-checklist {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -744px;
+  width: 63px;
+  height: 65px;
+}
+.icon-clock {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -183px;
+  width: 46px;
+  height: 37px;
+}
+.icon-graduation {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -240px;
+  width: 33px;
+  height: 37px;
+}
+.icon-like {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -662px;
+  width: 55px;
+  height: 62px;
+}
+.icon-ok {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px 0px;
+  width: 15px;
+  height: 10px;
+}
+.icon-peak {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -582px;
+  width: 67px;
+  height: 60px;
+}
+.icon-quote {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -356px;
+  width: 52px;
+  height: 52px;
+}
+.icon-school {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -297px;
+  width: 51px;
+  height: 39px;
+}
+.icon-time {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -129px;
+  width: 53px;
+  height: 34px;
+}
+.icon-youtube-symbol {
+  background-image: url(../img/sprites/sprite.png);
+  background-position: 0px -428px;
+  width: 67px;
+  height: 55px;
+}

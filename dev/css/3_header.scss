@@ -1,0 +1,344 @@
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+
+
+.content {
+  box-sizing: border-box;
+  min-height: 100%;
+
+}
+    
+body{
+    font-family: 'OpenSans';
+    overflow-x: hidden;
+}
+
+.container{
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+.section{
+    padding: 65px 0 60px
+}
+
+.top-banner{
+    height: 100vh;
+    min-height: 900px;
+    background-image: url(../img/top-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 20.37px 0.63px rgba(0, 4, 3, 0.52);
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(90deg, #182663 0%, rgba(24, 38, 99, 0.9294119999999999) 100%);
+        background: -moz-linear-gradient(90deg, #182663 0%, rgba(24, 38, 99, 0.9294119999999999) 100%);
+        background: -o-linear-gradient(90deg, #182663 0%, rgba(24, 38, 99, 0.9294119999999999) 100%);
+        background: -ms-linear-gradient(90deg, #182663 0%, rgba(24, 38, 99, 0.9294119999999999) 100%);
+        background: linear-gradient(0deg, #182663 0%, rgba(24, 38, 99, 0.9294119999999999) 100%);
+        position: relative;
+        .bottom-gradient{
+            background: -webkit-linear-gradient(90deg, #090e24 0%, rgba(9, 14, 36, 0) 100%);
+            background: -moz-linear-gradient(90deg, #090e24 0%, rgba(9, 14, 36, 0) 100%);
+            background: -o-linear-gradient(90deg, #090e24 0%, rgba(9, 14, 36, 0) 100%);
+            background: -ms-linear-gradient(90deg, #090e24 0%, rgba(9, 14, 36, 0) 100%);
+            background: linear-gradient(0deg, #090e24 0%, rgba(9, 14, 36, 0) 100%);
+            width: 100%;
+            height: 391px;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            z-index: 2;
+        }
+        
+    }
+}
+
+
+.top-banner{
+    .container{
+        display: flex;
+        height: 100%;
+        
+        padding-top: 160px;
+    }
+}
+
+.top-banner__right{
+    width: 600px;
+    padding: 0 30px 135px;
+    position: relative;
+    z-index: 3;
+}
+
+.top-banner__left{
+    width: calc(100% - 600px);
+    padding: 35px 0 60px 0 ;
+}
+
+.top-banner__left{
+    position: relative;
+}
+.top-banner__person{
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        height: 100%;
+    
+}
+
+
+.top-banner__author{
+    font-family: 'Exo2';
+    color:  #ffffff;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.main-heading{
+    font-family: 'Exo2';
+    color:  #d6b180;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.top-banner__description{
+    font-family: 'Exo2';
+    color:  #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 1.2;
+}
+
+.top-banner__desc-right{
+    margin-left: 45px;
+    span{
+        font-weight: 700;
+        display: block;
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: calc(100% + 3px);
+            display: block;
+            width: 100%;
+            background-image: url(../img/underline1.png);
+            background-repeat: no-repeat;
+            height: 10px;
+            background-position: top left;
+            background-size: 100%;
+        }
+    }
+}
+
+.subscribe-btn, .sticky-nav .main-menu__list .subscribe-btn{
+    font-family: 'Exo2';
+    z-index: 1;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    background:  #f40845;
+    color:  #ffffff;
+    box-shadow: 0px 3px 4.85px 0.15px rgba(0, 4, 3, 0.18);
+    width: 270px;
+    display: block;
+    text-align: center;
+    padding: 25px 5px;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    &:after{
+          content: "";
+          position: absolute;
+          background: none repeat scroll 0 0 #fff;
+          height: 0%;
+          left: 50%;
+          top: 50%;
+          width: 100%;
+          z-index: -1;
+          -webkit-transition: all .3s ease 0s;
+          -moz-transition: all .3s ease 0s;
+          -o-transition: all .3s ease 0s;
+          transition: all .3s ease 0s;
+          opacity: 1;
+          -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+
+    &:hover{
+        color: #f40845;
+        text-shadow: none;
+        &:after{
+            height: 420%;
+        }
+    }
+}
+
+
+.subscribe-btn-wrapper{
+    width: 270px;
+    position: relative;
+    overflow: hidden;
+    background:  #f40845;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    &:after{
+          content: "";
+          position: absolute;
+          background: none repeat scroll 0 0 #fff;
+          height: 0%;
+          left: 50%;
+          top: 50%;
+          width: 100%;
+          z-index: 0;
+          -webkit-transition: all .3s ease 0s;
+          -moz-transition: all .3s ease 0s;
+          -o-transition: all .3s ease 0s;
+          transition: all .3s ease 0s;
+          opacity: 1;
+          -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+    &:hover{
+        &:after{
+            height: 420%;
+        }
+    }
+}
+
+.subscribe-btn-wrapper{
+    border-radius: 5px;
+    overflow: hidden;
+    .subscribe-btn{
+        background: transparent;
+        border: none;
+    }
+}
+
+.logo-holder{
+    max-width: 180px;
+    text-align: center;
+    margin-left: 60px;
+    z-index: 3;
+    position: relative;
+}
+
+.logo-slogan{
+    font-family: 'Exo2';
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.banner-logo{
+    margin-bottom: 15px;
+    img{
+        width: 122px;
+        height: 95px;
+    }
+}
+
+.main-menu__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu__item{
+    display: inline-block;
+}
+
+.main-menu__link{
+    font-family: 'Exo2';
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    display: block;
+    padding: 40px 20px;
+    transition: all 0.5s;
+    &:hover{
+        color: #d6b080;
+        transition: all 0.5s;
+    }
+}
+
+.timer-wrapper{
+    margin-bottom: 45px;
+}
+
+.timer{
+    display: flex;
+}
+
+.time-remaining{
+    font-family: 'Exo2';
+    color:  #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.timer-block{
+    font-family: 'Exo2';
+    color:  #d6b180;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 30px;
+}
+.timer-text{
+    font-family: 'Exo2';
+    color:  #d6b180;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.top-banner-bg-author{
+    position: absolute;
+    text-transform: uppercase;
+    color: #162257;
+    font-size: 12vw;
+    bottom: 0;
+    line-height: 1;
+    font-family: 'Exo2';
+    font-weight: 600;
+}
+.mobile-menu__icon, .mobile-subscribe-link{
+    display: none;
+}
